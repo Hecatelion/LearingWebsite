@@ -1,0 +1,120 @@
+@font-face
+{
+	font-family: Eighties;
+	src: url("../resources/Eighties.ttf") format('truetype');
+}
+
+body
+{
+	color: white;
+	background: url("../resources/space.png") scroll repeat;
+
+}
+
+.projects
+{
+	clear: both;
+	display: flex;
+	justify-content: center;
+}
+
+.sections:nth-child(1)
+{
+	order: 1;
+	
+}
+.sections:nth-child(2)
+{
+	order: 2;
+	border: 3px green dotted;	
+}
+
+.sections
+{
+	padding: 10px;
+	size: 50%;
+}
+
+a
+{
+	color: yellow;
+	text-decoration: underline;
+}
+a : active
+{
+	/*
+	color: yellow;
+	text-decoration: underline;
+	*/
+	color: red;
+	text-decoration: none;
+}
+a:visited
+{
+	/*
+	color: yellow;
+	text-decoration: underline;
+	*/
+	color: white;
+	text-decoration: none;
+}
+a:focus
+{
+	background-color: yellow;
+	color: black;
+}
+
+h1, h2, h3
+{
+	font-weight: normal;
+	clear: both;
+	font-family: Eighties, Verdana, serif;
+}
+
+.floating_image
+{
+	float: right;
+}
+
+.floating_image : hover
+{
+    box-shadow: 6px 6px 0px yellow;
+}
+
+.introduction
+{
+	background-color: black;
+	color: red;
+}
+
+.p1, .p2
+{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.p1:hover, .p2:hover
+{
+	border: 3px yellow solid;
+    box-shadow: 6px 6px 0px yellow;
+}
+
+.p1
+{
+	font-size: 0.8em;
+}
+
+.p2
+{
+	font-size: 1em;
+}
+
+.p3
+{
+	font-size: 1.2em;
+}
+
+.p4
+{
+	font-size: 1.5em;
+}

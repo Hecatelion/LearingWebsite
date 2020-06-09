@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button" onclick="init()">Init</button>
+<button type="button" onclick="checkIndexes()">Check</button>
+<button type="button" onclick="next()">Next</button>
+
+<p class="demo">nb 0</p>
+<p class="demo">nb 1</p>
+<p class="demo">nb 2</p>
+
+<script>
+
+var ps;
+
+function checkIndexes()
+{
+    for(var i = 0; i < ps.length; ++i)
+    {
+        console.log("ps[" + i + "] = " + ps[i].textContent);
+    }
+}
+
+function init()
+{
+	ps = Array.from(document.getElementsByClassName("demo"));
+    ps[0].style.color = "red";
+    
+    for(var i = 0; i < ps.length; ++i)
+    {
+    	console.log(ps[i].textContent);
+    }
+}
+
+function slide(toLeft)
+{
+    if (toLeft == true) console.log("to the left");
+    ps[0].style.color = "black";
+    ps[1].style.color = "red";
+}
+
+function next()
+{
+	slide(true);
+    ps.push(ps.shift());
+}
+
+
+</script>
+
+</body>
+</html> 
